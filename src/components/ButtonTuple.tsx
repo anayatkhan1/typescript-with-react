@@ -1,19 +1,19 @@
 import React from "react";
+import { type Color } from "@/lib/type";
 
-type Color = "red" | "blue" | "green" | "yellow";
 type ButtonProps = {
   backgroundColor: Color;
   textColor: Color;
   fontSize: number;
   pillShape?: boolean;
-  padding:[number, number, number, string];
+  padding: [number, number, number, string];
 };
 
 const ButtonTuple = ({
   backgroundColor,
   fontSize,
   pillShape,
-  padding
+  padding,
 }: ButtonProps) => {
   return <button className="p-3 rounded-md text-white">Click Me</button>;
 };
